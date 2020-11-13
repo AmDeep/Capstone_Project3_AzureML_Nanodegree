@@ -1,0 +1,177 @@
+2020-11-13T21:04:29Z Starting output-watcher...
+2020-11-13T21:04:29Z IsDedicatedCompute == True, won't poll for Low Pri Preemption
+2020-11-13T21:04:30Z Executing 'Copy ACR Details file' on 10.0.0.6
+2020-11-13T21:04:30Z Copy ACR Details file succeeded on 10.0.0.6. Output: 
+>>>   
+>>>   
+Login Succeeded
+Using default tag: latest
+latest: Pulling from azureml/azureml_3948892c3f204a4877f0b9993b8e7795
+Digest: sha256:820587885c14db521c3b0da61b47f6d86bec5173766102203ab34ff189fea18a
+Status: Image is up to date for viennaglobal.azurecr.io/azureml/azureml_3948892c3f204a4877f0b9993b8e7795:latest
+2020-11-13T21:04:31Z Check if container automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59 already exist exited with 0, 
+
+e32d1ed8f1d8a3b9b32f897979c2906e29a5702d866246f07902995706699470
+2020/11/13 21:04:32 Starting App Insight Logger for task:  containerSetup
+2020/11/13 21:04:32 Version: 3.0.01405.0001 Branch: .SourceBranch Commit: a9557e7
+2020/11/13 21:04:32 /dev/infiniband/uverbs0 found (implying presence of InfiniBand)?: false
+2020/11/13 21:04:32 sshd inside container not required for job, skipping setup.
+2020/11/13 21:04:33 All App Insights Logs was send successfully
+2020-11-13T21:04:33Z Starting docker container succeeded.
+2020-11-13T21:04:38Z Job environment preparation succeeded on 10.0.0.6. Output: 
+>>>   2020/11/13 21:04:26 Starting App Insight Logger for task:  prepareJobEnvironment
+>>>   2020/11/13 21:04:26 Version: 3.0.01405.0001 Branch: .SourceBranch Commit: a9557e7
+>>>   2020/11/13 21:04:26 runtime.GOOS linux
+>>>   2020/11/13 21:04:26 Reading dyanamic configs
+>>>   2020/11/13 21:04:26 Container sas url: https://baiscriptssn1prod.blob.core.windows.net/aihosttools?sv=2018-03-28&sr=c&si=aihosttoolspolicy&sig=nw%2FdVVtXVw5X%2Fv1RNVe9gGnpR2tHNu9A%2BO103GbElXo%3D
+>>>   2020/11/13 21:04:26 Failed to read from file /mnt/batch/tasks/startup/wd/az_resource/xdsenv.variable/azsecpack.variables, open /mnt/batch/tasks/startup/wd/az_resource/xdsenv.variable/azsecpack.variables: no such file or directory
+>>>   2020/11/13 21:04:26 [in autoUpgradeFromJobNodeSetup] Is Azsecpack installed false, isEnable false,
+>>>   2020/11/13 21:04:26 azsecpack isEnable:false,GetDisableVsatlsscan:true
+>>>   2020/11/13 21:04:26 [doTurnOffAzsecpack] output:   Active: inactive (dead)
+>>>   ,err:<nil>.
+>>>   2020/11/13 21:04:26 OS patching disabled by dynamic configs. Skipping.
+>>>   2020/11/13 21:04:26 Job: AZ_BATCHAI_JOB_NAME does not turn on the DetonationChamber
+>>>   2020/11/13 21:04:26 GPU count found: 0
+>>>   2020/11/13 21:04:26 AMLComputeXDSEndpoint:  https://sn1-prodk8ds.batchai.core.windows.net
+>>>   2020/11/13 21:04:26 AMLComputeXDSApiVersion:  2018-02-01
+>>>   2020/11/13 21:04:26 Creating directory /mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-126014/azureml/automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/config
+>>>   2020/11/13 21:04:26 This is not a aml-workstation (compute instance), current offer type: azureml. Starting identity responder as part of prepareJobEnvironment.
+>>>   2020/11/13 21:04:26 Starting identity responder.
+>>>   2020/11/13 21:04:26 Starting identity responder.
+>>>   2020/11/13 21:04:26 Failed to open file /mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-126014/azureml/automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/config/.batchai.IdentityResponder.envlist: open /mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-126014/azureml/automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/config/.batchai.IdentityResponder.envlist: no such file or directory
+>>>   2020/11/13 21:04:26 Logfile used for identity responder: /mnt/batch/tasks/workitems/804cf0b9-bcf9-49b8-a79a-5df7c7ee705d/job-1/automl_b8c812e4-09b5_76a9977f-4752-4642-a2f3-3c6c2ef8f4e5/IdentityResponderLog-tvmps_ed45eaa7c24ad34f111ccd2f325d4edbd823f9d9cf919c2d75ffd13ae7f939aa_d.txt
+>>>   2020/11/13 21:04:26 Logfile used for identity responder: /mnt/batch/tasks/workitems/804cf0b9-bcf9-49b8-a79a-5df7c7ee705d/job-1/automl_b8c812e4-09b5_76a9977f-4752-4642-a2f3-3c6c2ef8f4e5/IdentityResponderLog-tvmps_ed45eaa7c24ad34f111ccd2f325d4edbd823f9d9cf919c2d75ffd13ae7f939aa_d.txt
+>>>   2020/11/13 21:04:26 Started Identity Responder for job.
+>>>   2020/11/13 21:04:26 Started Identity Responder for job.
+>>>   2020/11/13 21:04:26 Creating directory /mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-126014/azureml/automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/wd
+>>>   2020/11/13 21:04:26 Creating directory /mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-126014/azureml/automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/shared
+>>>   2020/11/13 21:04:26 Mounting job level file systems
+>>>   2020/11/13 21:04:26 Creating directory /mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-126014/azureml/automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/mounts
+>>>   2020/11/13 21:04:26 Attempting to read datastore credentials file: /mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-126014/azureml/automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/config/.amlcompute.datastorecredentials
+>>>   2020/11/13 21:04:26 Datastore credentials file not found, skipping.
+>>>   2020/11/13 21:04:26 Attempting to read runtime sas tokens file: /mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-126014/azureml/automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/config/.master.runtimesastokens
+>>>   2020/11/13 21:04:26 Runtime sas tokens file not found, skipping.
+>>>   2020/11/13 21:04:26 No NFS configured
+>>>   2020/11/13 21:04:26 No Azure File Shares configured
+>>>   2020/11/13 21:04:26 Mounting blob file systems
+>>>   2020/11/13 21:04:27 Blobfuse runtime version blobfuse 1.0.3
+>>>   2020/11/13 21:04:27 Mounting azureml-blobstore-997d06ab-dded-4dec-aa6a-c64a9ea55b05 container from mlstrg126014 account at /mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-126014/azureml/automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/mounts/workspaceblobstore
+>>>   2020/11/13 21:04:27 Using Compute Identity to authenticate Blobfuse: false.
+>>>   2020/11/13 21:04:27 Using Compute Identity to authenticate Blobfuse: false.
+>>>   2020/11/13 21:04:27 Running following command: /bin/bash -c sudo blobfuse /mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-126014/azureml/automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/mounts/workspaceblobstore --tmp-path=/mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-126014/azureml/automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/caches/workspaceblobstore --file-cache-timeout-in-seconds=1000000 -o nonempty -o allow_other --config-file=/mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-126014/azureml/automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/configs/workspaceblobstore.cfg --log-level=LOG_WARNING
+>>>   2020/11/13 21:04:27 Successfully mounted a/an Blobfuse File System at /mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-126014/azureml/automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/mounts/workspaceblobstore
+>>>   2020/11/13 21:04:27 Waiting for blobfs to be mounted at /mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-126014/azureml/automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/mounts/workspaceblobstore
+>>>   2020/11/13 21:04:27 Successfully mounted azureml-blobstore-997d06ab-dded-4dec-aa6a-c64a9ea55b05 container from mlstrg126014 account at /mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-126014/azureml/automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/mounts/workspaceblobstore
+>>>   2020/11/13 21:04:27 No unmanaged file systems configured
+>>>   2020/11/13 21:04:27 Creating directory /mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-126014/azureml/automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/mounts/workspaceblobstore/azureml/AutoML_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/azureml_compute_logs
+>>>   2020/11/13 21:04:29 Creating directory /mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-126014/azureml/automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/mounts/workspaceblobstore/azureml/AutoML_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/logs
+>>>   2020/11/13 21:04:29 Creating directory /mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-126014/azureml/automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/mounts/workspaceblobstore/azureml/AutoML_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/outputs
+>>>   2020/11/13 21:04:29 Starting output-watcher...
+>>>   2020/11/13 21:04:30 Single file input dataset is enabled.
+>>>   2020/11/13 21:04:30 Start to pulling docker image: viennaglobal.azurecr.io/azureml/azureml_3948892c3f204a4877f0b9993b8e7795
+>>>   2020/11/13 21:04:30 Start pull docker image: viennaglobal.azurecr.io
+>>>   2020/11/13 21:04:30 Getting ACR Credentials from EMS for environment AutoML-AzureML-AutoML:Autosave_2020-11-13T20:08:45Z_cae21b51
+>>>   2020/11/13 21:04:30 Requesting XDS for registry details.
+>>>   2020/11/13 21:04:30 Attempt 1 of http call to https://sn1-prodk8ds.batchai.core.windows.net/hosttoolapi/subscriptions/572f8abf-a1a0-4b78-8c6d-3630739c72b5/resourceGroups/aml-quickstarts-126014/workspaces/quick-starts-ws-126014/clusters/bio/nodes/tvmps_ed45eaa7c24ad34f111ccd2f325d4edbd823f9d9cf919c2d75ffd13ae7f939aa_d?api-version=2018-02-01
+>>>   2020/11/13 21:04:30 Attempt 1. XDS Api returned non-successful ErrorCode: Success
+>>>    ErrorMessage: 
+>>>   
+>>>   2020/11/13 21:04:30 Got container registry details from credentials service for registry address: viennaglobal.azurecr.io.
+>>>   2020/11/13 21:04:30 Writing ACR Details to file...
+>>>   2020/11/13 21:04:30 Copying ACR Details file to worker nodes...
+>>>   2020/11/13 21:04:30 Executing 'Copy ACR Details file' on 10.0.0.6
+>>>   2020/11/13 21:04:30 Copy ACR Details file succeeded on 10.0.0.6. Output: 
+>>>   >>>   
+>>>   >>>   
+>>>   2020/11/13 21:04:30 Successfully retrieved ACR Credentials from EMS.
+>>>   2020/11/13 21:04:30 EMS returned viennaglobal.azurecr.io for environment AutoML-AzureML-AutoML
+>>>   2020/11/13 21:04:30 Container registry is ACR.
+>>>   2020/11/13 21:04:30 start login to the docker registry
+>>>   2020/11/13 21:04:30 Successfully logged into the docker registry.
+>>>   2020/11/13 21:04:30 Start run pull docker image command
+>>>   2020/11/13 21:04:31 Pull docker image succeeded.
+>>>   2020/11/13 21:04:31 Pull docker image time: 1.322452952s
+>>>   
+>>>   2020/11/13 21:04:31 Docker Version that this nodes use are: 3.0.1
+>>>   
+>>>   2020/11/13 21:04:31 The env variable file size is 35395 bytes
+>>>   2020/11/13 21:04:31 /dev/infiniband/uverbs0 found (implying presence of InfiniBand)?: false
+>>>   2020/11/13 21:04:31 Running Docker command: docker run --ulimit memlock=9223372036854775807 --ulimit nofile=262144:262144 --cap-add sys_ptrace --name automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59 -v /mnt/batch/tasks/shared/LS_root/mounts:/mnt/batch/tasks/shared/LS_root/mounts -v /mnt/batch/tasks/shared/LS_root/configs:/mnt/batch/tasks/shared/LS_root/configs -v /mnt/batch/tasks/shared/LS_root/shared:/mnt/batch/tasks/shared/LS_root/shared -v /mnt/batch/tasks/workitems/804cf0b9-bcf9-49b8-a79a-5df7c7ee705d/job-1/automl_b8c812e4-09b5_76a9977f-4752-4642-a2f3-3c6c2ef8f4e5/certs:/mnt/batch/tasks/workitems/804cf0b9-bcf9-49b8-a79a-5df7c7ee705d/job-1/automl_b8c812e4-09b5_76a9977f-4752-4642-a2f3-3c6c2ef8f4e5/certs -v /mnt/batch/tasks/startup:/mnt/batch/tasks/startup -v /mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-126014/azureml/automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/mounts/workspaceblobstore/azureml/AutoML_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/azureml_compute_logs:/mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-126014/azureml/automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/mounts/workspaceblobstore/azureml/AutoML_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/azureml_compute_logs -v /mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-126014/azureml/automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59:/mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-126014/azureml/automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59 -v /mnt/batch/tasks/workitems/804cf0b9-bcf9-49b8-a79a-5df7c7ee705d/job-1/automl_b8c812e4-09b5_76a9977f-4752-4642-a2f3-3c6c2ef8f4e5/wd:/mnt/batch/tasks/workitems/804cf0b9-bcf9-49b8-a79a-5df7c7ee705d/job-1/automl_b8c812e4-09b5_76a9977f-4752-4642-a2f3-3c6c2ef8f4e5/wd -v /opt/azureml:/opt/azureml:ro -w /mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-126014/azureml/automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/wd --expose 23 --env-file /mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-126014/azureml/automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/config/.batchai.envlist --shm-size 2g -d -it --privileged --net=host viennaglobal.azurecr.io/azureml/azureml_3948892c3f204a4877f0b9993b8e7795
+>>>   2020/11/13 21:04:31 Attempt 1 of http call to https://southcentralus.experiments.azureml.net/history/v1.0/private/subscriptions/572f8abf-a1a0-4b78-8c6d-3630739c72b5/resourceGroups/aml-quickstarts-126014/providers/Microsoft.MachineLearningServices/workspaces/quick-starts-ws-126014/runs/AutoML_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/spans
+>>>   2020/11/13 21:04:31 Check if container automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59 already exist exited with 0, 
+>>>   
+>>>   2020/11/13 21:04:31 Check if container automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59 already exist exited with 0, 
+>>>   
+>>>   2020/11/13 21:04:33 Container ssh is not required for job type.
+>>>   2020/11/13 21:04:33 Starting docker container succeeded.
+>>>   2020/11/13 21:04:33 Starting docker container succeeded.
+>>>   2020/11/13 21:04:33 runSpecialJobTask: os.GetEnv constants.StdouterrDir: /mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-126014/azureml/automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/mounts/workspaceblobstore/azureml/AutoML_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/azureml_compute_logs
+>>>   2020/11/13 21:04:33 runSpecialJobTask: Raw cmd for preparation is passed is: /azureml-envs/azureml_0e3a8a6dba181476a2523c12c58dfc97/bin/python /mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-126014/azureml/automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/mounts/workspaceblobstore/azureml/AutoML_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59-setup/job_prep.py --snapshots '[{"Id":"2b35616a-b452-4fb5-a278-1c9db9b3ed31","PathStack":["."],"SnapshotEntityId":null}]'
+>>>   2020/11/13 21:04:33 runSpecialJobTask: stdout path for preparation is passed is: /mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-126014/azureml/automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/mounts/workspaceblobstore/azureml/AutoML_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/azureml_compute_logs/65_job_prep-tvmps_ed45eaa7c24ad34f111ccd2f325d4edbd823f9d9cf919c2d75ffd13ae7f939aa_d.txt
+>>>   2020/11/13 21:04:33 runSpecialJobTask: stderr path for preparation is passed is: /mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-126014/azureml/automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/mounts/workspaceblobstore/azureml/AutoML_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/azureml_compute_logs/65_job_prep-tvmps_ed45eaa7c24ad34f111ccd2f325d4edbd823f9d9cf919c2d75ffd13ae7f939aa_d.txt
+>>>   2020/11/13 21:04:33 native cmd: cd /mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-126014/azureml/automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/mounts/workspaceblobstore/azureml/AutoML_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59;/azureml-envs/azureml_0e3a8a6dba181476a2523c12c58dfc97/bin/python /mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-126014/azureml/automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/mounts/workspaceblobstore/azureml/AutoML_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59-setup/job_prep.py --snapshots '[{"Id":"2b35616a-b452-4fb5-a278-1c9db9b3ed31","PathStack":["."],"SnapshotEntityId":null}]'
+>>>   2020/11/13 21:04:34 runSpecialJobTask: commons.GetOsPlatform(): ubuntu
+>>>   2020/11/13 21:04:34 runSpecialJobTask: Running cmd: /usr/bin/docker exec -t automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59 bash -c if [ -f ~/.bashrc ]; then PS1_back=$PS1; PS1='$'; . ~/.bashrc; PS1=$PS1_back; fi;PATH=$PATH:$AZ_BATCH_NODE_STARTUP_DIR/wd/;cd /mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-126014/azureml/automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/mounts/workspaceblobstore/azureml/AutoML_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59;/azureml-envs/azureml_0e3a8a6dba181476a2523c12c58dfc97/bin/python /mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-126014/azureml/automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/mounts/workspaceblobstore/azureml/AutoML_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59-setup/job_prep.py --snapshots '[{"Id":"2b35616a-b452-4fb5-a278-1c9db9b3ed31","PathStack":["."],"SnapshotEntityId":null}]'
+>>>   2020/11/13 21:04:38 runSpecialJobTask: job preparation exited with code 0 and err <nil>
+>>>   
+>>>   2020/11/13 21:04:38 runSpecialJobTask: preparation: [2020-11-13T21:04:35.099025] Entering job preparation.
+>>>   2020/11/13 21:04:38 runSpecialJobTask: preparation: [2020-11-13T21:04:35.875823] Starting job preparation.
+>>>   2020/11/13 21:04:38 runSpecialJobTask: preparation: [2020-11-13T21:04:35.875879] Extracting the control code.
+>>>   2020/11/13 21:04:38 runSpecialJobTask: preparation: [2020-11-13T21:04:35.914883] fetching and extracting the control code on master node.
+>>>   2020/11/13 21:04:38 runSpecialJobTask: preparation: [2020-11-13T21:04:35.914946] Starting extract_project.
+>>>   2020/11/13 21:04:38 runSpecialJobTask: preparation: [2020-11-13T21:04:35.915016] Starting to extract zip file.
+>>>   2020/11/13 21:04:38 runSpecialJobTask: preparation: [2020-11-13T21:04:36.792829] Finished extracting zip file.
+>>>   2020/11/13 21:04:38 runSpecialJobTask: preparation: [2020-11-13T21:04:36.985369] Using urllib.request Python 3.0 or later
+>>>   2020/11/13 21:04:38 runSpecialJobTask: preparation: [2020-11-13T21:04:36.985436] Start fetching snapshots.
+>>>   2020/11/13 21:04:38 runSpecialJobTask: preparation: [2020-11-13T21:04:36.985480] Start fetching snapshot.
+>>>   2020/11/13 21:04:38 runSpecialJobTask: preparation: [2020-11-13T21:04:36.985497] Retrieving project from snapshot: 2b35616a-b452-4fb5-a278-1c9db9b3ed31
+>>>   2020/11/13 21:04:38 runSpecialJobTask: preparation: Starting the daemon thread to refresh tokens in background for process with pid = 55
+>>>   2020/11/13 21:04:38 runSpecialJobTask: preparation: [2020-11-13T21:04:37.300720] Finished fetching snapshot.
+>>>   2020/11/13 21:04:38 runSpecialJobTask: preparation: [2020-11-13T21:04:37.300758] Finished fetching snapshots.
+>>>   2020/11/13 21:04:38 runSpecialJobTask: preparation: [2020-11-13T21:04:37.300770] Finished extract_project.
+>>>   2020/11/13 21:04:38 runSpecialJobTask: preparation: [2020-11-13T21:04:37.317013] Finished fetching and extracting the control code.
+>>>   2020/11/13 21:04:38 runSpecialJobTask: preparation: [2020-11-13T21:04:37.320585] downloadDataStore - Download from datastores if requested.
+>>>   2020/11/13 21:04:38 runSpecialJobTask: preparation: [2020-11-13T21:04:37.322638] Start run_history_prep.
+>>>   2020/11/13 21:04:38 runSpecialJobTask: preparation: [2020-11-13T21:04:37.381400] Entering context manager injector.
+>>>   2020/11/13 21:04:38 runSpecialJobTask: preparation: [2020-11-13T21:04:38.159945] downloadDataStore completed
+>>>   2020/11/13 21:04:38 runSpecialJobTask: preparation: [2020-11-13T21:04:38.162902] Job preparation is complete.
+>>>   2020/11/13 21:04:38 All App Insights Logs was send successfully
+>>>   2020/11/13 21:04:38 Process Exiting with Code:  0
+>>>   
+2020-11-13T21:04:38Z 127.0.0.1 slots=4 max-slots=4
+2020-11-13T21:04:38Z launching Custom job
+2020-11-13T21:07:11Z job exited with code 0
+2020-11-13T21:07:11Z Executing 'JobRelease task' on 10.0.0.6
+2020-11-13T21:07:19Z JobRelease task succeeded on 10.0.0.6. Output: 
+>>>   2020/11/13 21:07:11 Starting App Insight Logger for task:  jobRelease
+>>>   2020/11/13 21:07:11 Version: 3.0.01405.0001 Branch: .SourceBranch Commit: a9557e7
+>>>   2020/11/13 21:07:12 runSpecialJobTask: os.GetEnv constants.StdouterrDir: /mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-126014/azureml/automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/mounts/workspaceblobstore/azureml/AutoML_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/azureml_compute_logs
+>>>   2020/11/13 21:07:12 runSpecialJobTask: Raw cmd for postprocessing is passed is: export AZ_BATCHAI_RUN_STATUS='SUCCEEDED';export AZ_BATCHAI_LOG_UPLOAD_FAILED='false';/azureml-envs/azureml_0e3a8a6dba181476a2523c12c58dfc97/bin/python $AZ_BATCHAI_JOB_MOUNT_ROOT/workspaceblobstore/azureml/AutoML_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/azureml-setup/job_release.py
+>>>   2020/11/13 21:07:12 runSpecialJobTask: stdout path for postprocessing is passed is: /mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-126014/azureml/automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/mounts/workspaceblobstore/azureml/AutoML_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/azureml_compute_logs/75_job_post-tvmps_ed45eaa7c24ad34f111ccd2f325d4edbd823f9d9cf919c2d75ffd13ae7f939aa_d.txt
+>>>   2020/11/13 21:07:12 runSpecialJobTask: stderr path for postprocessing is passed is: /mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-126014/azureml/automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/mounts/workspaceblobstore/azureml/AutoML_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/azureml_compute_logs/75_job_post-tvmps_ed45eaa7c24ad34f111ccd2f325d4edbd823f9d9cf919c2d75ffd13ae7f939aa_d.txt
+>>>   2020/11/13 21:07:12 native cmd: cd /mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-126014/azureml/automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/mounts/workspaceblobstore/azureml/AutoML_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59;export AZ_BATCHAI_RUN_STATUS='SUCCEEDED';export AZ_BATCHAI_LOG_UPLOAD_FAILED='false';/azureml-envs/azureml_0e3a8a6dba181476a2523c12c58dfc97/bin/python $AZ_BATCHAI_JOB_MOUNT_ROOT/workspaceblobstore/azureml/AutoML_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/azureml-setup/job_release.py
+>>>   2020/11/13 21:07:12 runSpecialJobTask: commons.GetOsPlatform(): ubuntu
+>>>   2020/11/13 21:07:12 runSpecialJobTask: Running cmd: /usr/bin/docker exec -t automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59 bash -c if [ -f ~/.bashrc ]; then PS1_back=$PS1; PS1='$'; . ~/.bashrc; PS1=$PS1_back; fi;PATH=$PATH:$AZ_BATCH_NODE_STARTUP_DIR/wd/;cd /mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-126014/azureml/automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/mounts/workspaceblobstore/azureml/AutoML_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59;export AZ_BATCHAI_RUN_STATUS='SUCCEEDED';export AZ_BATCHAI_LOG_UPLOAD_FAILED='false';/azureml-envs/azureml_0e3a8a6dba181476a2523c12c58dfc97/bin/python $AZ_BATCHAI_JOB_MOUNT_ROOT/workspaceblobstore/azureml/AutoML_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59/azureml-setup/job_release.py
+>>>   2020/11/13 21:07:19 runSpecialJobTask: job postprocessing exited with code 0 and err <nil>
+>>>   
+>>>   2020/11/13 21:07:19 runSpecialJobTask: postprocessing: [2020-11-13T21:07:12.471051] Entering job release
+>>>   2020/11/13 21:07:19 runSpecialJobTask: postprocessing: [2020-11-13T21:07:14.730287] Starting job release
+>>>   2020/11/13 21:07:19 runSpecialJobTask: postprocessing: [2020-11-13T21:07:14.745615] Logging experiment finalizing status in history service.
+>>>   2020/11/13 21:07:19 runSpecialJobTask: postprocessing: Starting the daemon thread to refresh tokens in background for process with pid = 894
+>>>   2020/11/13 21:07:19 runSpecialJobTask: postprocessing: [2020-11-13T21:07:14.745926] job release stage : upload_datastore starting...
+>>>   2020/11/13 21:07:19 runSpecialJobTask: postprocessing: [2020-11-13T21:07:14.746134] job release stage : start importing azureml.history._tracking in run_history_release.
+>>>   2020/11/13 21:07:19 runSpecialJobTask: postprocessing: [2020-11-13T21:07:14.746273] job release stage : copy_batchai_cached_logs starting...
+>>>   2020/11/13 21:07:19 runSpecialJobTask: postprocessing: [2020-11-13T21:07:14.746310] job release stage : copy_batchai_cached_logs completed...
+>>>   2020/11/13 21:07:19 runSpecialJobTask: postprocessing: [2020-11-13T21:07:14.746425] job release stage : execute_job_release starting...
+>>>   2020/11/13 21:07:19 runSpecialJobTask: postprocessing: [2020-11-13T21:07:14.755497] Entering context manager injector.
+>>>   2020/11/13 21:07:19 runSpecialJobTask: postprocessing: [2020-11-13T21:07:14.756613] job release stage : upload_datastore completed...
+>>>   2020/11/13 21:07:19 runSpecialJobTask: postprocessing: [2020-11-13T21:07:15.120372] job release stage : send_run_telemetry starting...
+>>>   2020/11/13 21:07:19 runSpecialJobTask: postprocessing: [2020-11-13T21:07:15.320191] job release stage : execute_job_release completed...
+>>>   2020/11/13 21:07:19 runSpecialJobTask: postprocessing: [2020-11-13T21:07:16.551376] job release stage : send_run_telemetry completed...
+>>>   2020/11/13 21:07:19 runSpecialJobTask: postprocessing: [2020-11-13T21:07:16.551682] Job release is complete
+>>>   2020/11/13 21:07:19 All App Insights Logs was send successfully
+>>>   
+2020-11-13T21:07:19Z Executing 'Job environment clean-up' on 10.0.0.6
+2020-11-13T21:07:20Z Removing container automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59 exited with 0, automl_b8c812e4-09b5-4481-b73c-6f450ed7b2d7_59
+
+
