@@ -26,12 +26,12 @@ The code for training is stored in the train.py file. After executing the run on
 ***************************************************************************************************************************
 ### Best Run ID:-  HD_012aba72-78a4-4a4d-92fd-aca87c3320b1_3
 
- ### Metrics:-  {'Regularization Strength: ': 0.1, 'Max iterations: ': 64, 'Accuracy': 0.7656500802568218}
+### Metrics:-  {'Regularization Strength: ': 0.1, 'Max iterations: ': 64, 'Accuracy': 0.7656500802568218}
 
- ### Parameters:-  ['--C', '0.1', '--max_iter', '64']
+### Parameters:-  ['--C', '0.1', '--max_iter', '64']
 
- ### Accuracy:-  0.7656500802568218
- ***************************************************************************************************************************
+### Accuracy:-  0.7656500802568218
+***************************************************************************************************************************
  
 ![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalHyperDriveFiles/hdc1.PNG)
 ![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalHyperDriveFiles/hdc2.PNG)
@@ -43,17 +43,29 @@ The outputted best model is stored under hyperdrive_best_model.joblib and the su
 
 ## AutoML Modelling
 ***
+A score.py file is created with commands for telemtry, input sampling and output sampling. This is achieved by applying a pandas Series setup. Further commands are inputted in the file to create environments and load models once AutoML outputs the best results. Three of the most accurate models as seen from the images below are:-
+### 1. VotingEnsemble-----------------------------------> 0.8131
+### 2. StackEnsemble------------------------------------> 0.8105
+### 3. StandardScalerWrapper XGBoostClassifier----------> 0.8081
 ![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalAutoMLFiles/AUTOMLNANODEGREE.PNG)
 ![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalAutoMLFiles/AUTOMLPAGE2.PNG)
 ![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalAutoMLFiles/AUTOMLPAGE3.PNG)
-![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalAutoMLFiles/AUTOMLPAGE4.PNG)
-![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalAutoMLFiles/AUTOMLPAGE5.PNG)
 ![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalAutoMLFiles/AUTOMLPAGE6.PNG)
-![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalAutoMLFiles/AUTOMLPAGE7.PNG)
+
+
+The details for the run and the respective metrics such as AUC, accuracy, losses can be compared from the images above. The information for the Voting Ensemble algorithms and weights can be summarized as per below:-
+**************************************************************************************************************************
+
+### {'_aml_system_azureml.automlComponent': 'AutoML', '_aml_system_ComputeTargetStatus': '{"AllocationState":"steady","PreparingNodeCount":0,"RunningNodeCount":1,"CurrentNodeCount":5}', 'ensembled_iterations': '[6, 0, 22, 9, 10, 1, 18, 24, 25]', 'ensembled_algorithms': "['XGBoostClassifier', 'LightGBM', 'LightGBM', 'XGBoostClassifier', 'XGBoostClassifier', 'XGBoostClassifier', 'LightGBM', 'LightGBM', 'XGBoostClassifier']", 'ensemble_weights': '[0.07142857142857142, 0.07142857142857142, 0.2857142857142857, 0.14285714285714285, 0.14285714285714285, 0.07142857142857142, 0.07142857142857142, 0.07142857142857142, 0.07142857142857142]', 'best_individual_pipeline_score': '0.8080553191489361', 'best_individual_iteration': '6', '_aml_system_automl_is_child_run_end_telemetry_event_logged': 'True'}
+***************************************************************************************************************************
+
 ***
 
 ## Deployment & Endpoint Results
 ***
+![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalAutoMLFiles/AUTOMLPAGE4.PNG)
+![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalAutoMLFiles/AUTOMLPAGE5.PNG)
+![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalAutoMLFiles/AUTOMLPAGE7.PNG)
 ![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalAutoMLFiles/DEPLOYMENT.PNG)
 ![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalAutoMLFiles/MODELDEPLOYAUTOML.PNG)
 ***
