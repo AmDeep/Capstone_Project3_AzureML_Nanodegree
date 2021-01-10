@@ -39,7 +39,7 @@ One of major objectives of this project is to thus accurately predict the biolog
 ## Deployment & Endpoint Results
 ***
 ![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalAutoMLFiles/DEPLOYMENT.PNG)
-![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalAutoMLFiles/MODELDEPLOYMENTML.PNG)
+![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalAutoMLFiles/MODELDEPLOYMENTAUTOML.PNG)
 ***
 
 ## Recommendations & Future Steps
