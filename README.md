@@ -64,7 +64,9 @@ The details for the run and the respective metrics such as AUC, accuracy, losses
 
 ## Deployment & Endpoint Results
 ***
-Using Azure ACI, a webservice can be deployed as seen from the images below where we define sample values for the all inputs(from D1 to D1776). This input data is converted to a JSON format and dumped. In the endpoint.py file, we set the content type and 
+Using Azure ACI, a webservice can be deployed as seen from the images below where we define sample values for the all inputs(from D1 to D1776). This input data is converted to a JSON format and dumped. In the endpoint.py file, we set the content type and fill in the Scoring URI obtained from the ACI webservice model deployment. Once the respective model endpoint has a healthy status, we can then send sample inputs to test out the output through two separate methods:-
+1. By running the endpoint.py file with predefined input sample points.
+2. Creating a sample JSON file and deploying the model on it, in order to compare the true and predicted outputs.
 ![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalAutoMLFiles/AUTOMLPAGE4.PNG)
 ![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalAutoMLFiles/AUTOMLPAGE5.PNG)
 ![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalAutoMLFiles/DEPLOYMENT.PNG)
