@@ -71,20 +71,36 @@ Using Azure ACI, a webservice can be deployed as seen from the images below wher
 ![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalAutoMLFiles/AUTOMLPAGE5.PNG)
 ![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalAutoMLFiles/DEPLOYMENT.PNG)
 ![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalAutoMLFiles/MODELDEPLOYAUTOML.PNG)
+As per the results obtained from the images above, we can see that the predicted and true values closely match for the sample inputs, signifying that the model deployment is successful. The model endpoint is deleted once the program objectives are achieved.
 ***
 
 ## Swagger JSON and UI
 ***
+The concept of the model deployment is expanded to a sample application through Swagger. This UI and model deployment is performed on a separate lab environment due to the lack of time on the initial lab environment, owing to long model development periods and slower connectivity. Using a similar code for the endpoint, we execute commands through docker to implement modules for JSON, shell, configuration, benchmark and log scripts. The end result is a working local host application that visualizes the individual input metrics and also allows the files to be used on sample inputs. 
+![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/Data/Swagger1.PNG)
+![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/Data/Swagger2.PNG)
+![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/Data/Swagger3.PNG)
+![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/Data/Swagger4.PNG)
+![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/Data/Swagger5.PNG)
+![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/Data/Swagger6.PNG)
 
+The images above show the results of the scripts and the model endpoints, indicated by the [true.true] output. Server response times and the resultant execution periods can be ascertained from the remaining swagger data. The model endpoint is deleted through the console once the objectives are met. Further explanation on the steps has been provided in the video.
 ***
-
-
 ## Recommendations & Future Steps
 ***
+The determination of molecular data for the purpose of synthesizing molecular data is hugely dependent on the calculation of thousands of datapoints. It is more imperative for these calculations to be accurate and time sensitive in order to avoid projects becoming overtime and overbudget. Current highest accuracies that have been achieved through Kaggle experts, gives us a glimpse of how problematic this issue is, with average values being ~30% to 35%. The results of this project prove that it is possible to improve these scores and even compare the best models against each other.
+
+The model depolyments can be made more user friendly and intuitive by the inclusion of better buttons and icons for the Swagger file. This can also be linked with a light weight Flask application for better operability. Further feature engineering can also be performed on the individual columnar values to derive better predictors for the output to raise the accuracies above 90%. Data denoising can also be performed to cut down on the values for the datasets that might deviate the models from better accuracies. Some of the columns represent signal values which can be preprocessed or redefined using feed forward transform filters. Other recommendationas and future steps include:-
+
+1. Focusing on better UI and augmented response for users.
+2. Connecting activity(output) results with visuals to help improve data interpretation.
+3. Performing grid search tests on other parameters other than regularization strength and maximum number of iterations.
+4. Performing PCA and t-SNE plot tests on the data to interpret the relationship between inputs and outputs.
+5. Using the timeit() function to test out out fast the models respond to network deployments and output results.
 
 ***
 
 ## Video Link
 ***
-
+Note:- Time stamps during different portions of the code and the video can differ because the project was performed on multiple virtual machines at different time periods.
 ***
