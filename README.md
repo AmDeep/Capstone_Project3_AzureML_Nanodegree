@@ -19,6 +19,7 @@ One of major objectives of this project is to thus accurately predict the biolog
 
 ## Hyperdrive Modelling
 ***
+In order to perform a hyperdrive search, we begin by first creating a compute instance and generating code on Jupter Notebooks. The training and testing dataset are imported directly in their raw forms and then converted to tabular datasets. These are then converted to dataframes using pandas. The necessary libraries are imported and a sample experiment is created in the workspace. A cpu cluster is named and created with a certain vm size and 5 maximum nodes. One notebook uses ScriptRunConfig and the notebook in the Final folder uses a deprecated version of SKLearn.
 ![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalHyperDriveFiles/hdc1.PNG)
 ![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalHyperDriveFiles/hdc2.PNG)
 ![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalHyperDriveFiles/hdc3.PNG)
