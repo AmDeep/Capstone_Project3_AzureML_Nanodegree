@@ -57,18 +57,25 @@ The details for the run and the respective metrics such as AUC, accuracy, losses
 **************************************************************************************************************************
 
 ### {'_aml_system_azureml.automlComponent': 'AutoML', '_aml_system_ComputeTargetStatus': '{"AllocationState":"steady","PreparingNodeCount":0,"RunningNodeCount":1,"CurrentNodeCount":5}', 'ensembled_iterations': '[6, 0, 22, 9, 10, 1, 18, 24, 25]', 'ensembled_algorithms': "['XGBoostClassifier', 'LightGBM', 'LightGBM', 'XGBoostClassifier', 'XGBoostClassifier', 'XGBoostClassifier', 'LightGBM', 'LightGBM', 'XGBoostClassifier']", 'ensemble_weights': '[0.07142857142857142, 0.07142857142857142, 0.2857142857142857, 0.14285714285714285, 0.14285714285714285, 0.07142857142857142, 0.07142857142857142, 0.07142857142857142, 0.07142857142857142]', 'best_individual_pipeline_score': '0.8080553191489361', 'best_individual_iteration': '6', '_aml_system_automl_is_child_run_end_telemetry_event_logged': 'True'}
+![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalAutoMLFiles/AUTOMLPAGE7.PNG)
 ***************************************************************************************************************************
 
 ***
 
 ## Deployment & Endpoint Results
 ***
+Using Azure ACI, a webservice can be deployed as seen from the images below where we define sample values for the all inputs(from D1 to D1776). This input data is converted to a JSON format and dumped. In the endpoint.py file, we set the content type and 
 ![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalAutoMLFiles/AUTOMLPAGE4.PNG)
 ![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalAutoMLFiles/AUTOMLPAGE5.PNG)
-![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalAutoMLFiles/AUTOMLPAGE7.PNG)
 ![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalAutoMLFiles/DEPLOYMENT.PNG)
 ![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalAutoMLFiles/MODELDEPLOYAUTOML.PNG)
 ***
+
+## Swagger JSON and UI
+***
+
+***
+
 
 ## Recommendations & Future Steps
 ***
