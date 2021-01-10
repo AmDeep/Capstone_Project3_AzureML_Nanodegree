@@ -24,13 +24,13 @@ By defining a configuration for the logistic regression test, we apply different
 The code for training is stored in the train.py file. After executing the run on the environment, we arrive at the following configuration with the best accuracy:-
 
 ***************************************************************************************************************************
-Best Run ID:-  HD_012aba72-78a4-4a4d-92fd-aca87c3320b1_3
+### Best Run ID:-  HD_012aba72-78a4-4a4d-92fd-aca87c3320b1_3
 
- Metrics:-  {'Regularization Strength: ': 0.1, 'Max iterations: ': 64, 'Accuracy': 0.7656500802568218}
+ ### Metrics:-  {'Regularization Strength: ': 0.1, 'Max iterations: ': 64, 'Accuracy': 0.7656500802568218}
 
- Parameters:-  ['--C', '0.1', '--max_iter', '64']
+ ### Parameters:-  ['--C', '0.1', '--max_iter', '64']
 
- Accuracy:-  0.7656500802568218
+ ### Accuracy:-  0.7656500802568218
  ***************************************************************************************************************************
  
 ![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalHyperDriveFiles/hdc1.PNG)
