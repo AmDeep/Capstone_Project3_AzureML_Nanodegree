@@ -20,9 +20,24 @@ One of major objectives of this project is to thus accurately predict the biolog
 ## Hyperdrive Modelling
 ***
 In order to perform a hyperdrive search, we begin by first creating a compute instance and generating code on Jupter Notebooks. The training and testing dataset are imported directly in their raw forms and then converted to tabular datasets. These are then converted to dataframes using pandas. The necessary libraries are imported and a sample experiment is created in the workspace. A cpu cluster is named and created with a certain vm size and 5 maximum nodes. One notebook uses ScriptRunConfig and the notebook in the Final folder uses a deprecated version of SKLearn.
+By defining a configuration for the logistic regression test, we apply different paramteric tests for the C value(inverse of regularization strength) and maximum iterations. We define a policy using BanditPolicy with a slack factor, evaluation intervals and evaluation delay. The primary metric is set to accuracy, which has to be maximized. A total of 150 runs are specified and 5 maximum cocurrent runs.
+The code for training is stored in the train.py file. After executing the run on the environment, we arrive at the following configuration with the best accuracy:-
+
+***************************************************************************************************************************
+Best Run ID:-  HD_012aba72-78a4-4a4d-92fd-aca87c3320b1_3
+
+ Metrics:-  {'Regularization Strength: ': 0.1, 'Max iterations: ': 64, 'Accuracy': 0.7656500802568218}
+
+ Parameters:-  ['--C', '0.1', '--max_iter', '64']
+
+ Accuracy:-  0.7656500802568218
+ ***************************************************************************************************************************
+ 
 ![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalHyperDriveFiles/hdc1.PNG)
 ![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalHyperDriveFiles/hdc2.PNG)
 ![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalHyperDriveFiles/hdc3.PNG)
+
+The outputted best model is stored under hyperdrive_best_model.joblib and the successful status of the runs can be seen from the images above.
 
 ***
 
