@@ -1,15 +1,43 @@
 # Capstone_Project3_AzureML_Nanodegree
+***
 
 ## Overview Of Dataset
 ***
-![alt text](https://raw.githubusercontent.com/AmDeep/Project2_Udacity_Microsoft_ML/main/Images/screen-shot-2020-09-15-at-12.36.11-pm.png)
+![alt text](https://st4.depositphotos.com/4687155/27336/v/600/depositphotos_273364926-stock-video-4k-hexagon-chemical-moleculardata-information.jpg)
 
-The information in the dataset is stored in the comma separated values (CSV) format. This dataset represents the biological response of a Each row in this data set represents a molecule. The first column contains experimental data describing a real biological response; the molecule was seen to elicit this response (1), or not (0). The remaining columns represent molecular descriptors (d1 through d1776), these are caclulated properties that can capture some of the characteristics of the molecule - for example size, shape, or elemental constitution. The descriptor matrix has been normalized.
+The information in the dataset is stored in the comma separated values (CSV) format. Each row in the dataset represents a molecule while the first column titled Activity depcts the experimental data describing a real biological response. This is the output metric to measure and is dichotomous in nature with two possible values- the molecule was seen to elicit this response (1), or not (0). The dataset has 1776 input columns that describe molecular descriptors- from D1 to D1776. These columns relate to complex data about the molecules such as the size, shape, or elemental constitution. All elements in the descriptor matrix have been normalized.
 
+This dataset has been sampled from Kaggle as part of a research study and is open source, making it viable for the use of this project. The objective of this project is therefore to define the best parameters and metrics for the most accurate of models, by connecting molecular information to the actual biological response. 
+***
 
-The objective of the competition is to help us build as good a model as possible so that we can, as optimally as this data allows, relate molecular information, to an actual biological response.
+## Purpose & Objectives
+***
+The modelling of this dataset can vastly improve the detection and synthesis of drugs, reducing time and operational costs. Since the development of a new drug largely depends on trial and error by studying biological responses to new substances, industries largely focus on augmenting such detection processes. The several compounds once synthesized, become drugs through a process that is extremely expensive and time-consuming. It is common in the industry for companies to finance large scale pharmaceutical products to no effect as the desired products may never be detected, let alone produced.
 
-We have shared the data in the comma separated values (CSV) format. Each row in this data set represents a molecule. The first column contains experimental data describing an actual biological response; the molecule was seen to elicit this response (1), or not (0). The remaining columns represent molecular descriptors (d1 through d1776), these are calculated properties that can capture some of the characteristics of the molecule - for example size, shape, or elemental constitution. The descriptor matrix has been normalized.
+One of major objectives of this project is to thus accurately predict the biological activity of molecules, and understand the rationale behind those predictions as a method of imparting value to the pharmaceutical industry. Current industry standards stress on the use of Gradient Boosting Machines (GBMs) for achieving the desired results. These robust ensemble learning techniques may offer high accuracies, but are highly memory intensive and can rarely be applied for other substances and drugs. By using both the hyperdrive grid searching methods and AutoML configurations, this capstone project will perform a comparative study of the maximum possible accuracy achieved through different methods. Emphasis will also be placed on the feature selection techniques of AutoML and the deployment of models throug Swagger an ACI. Due to the dichotomous nature of the output metric, a classification scheme has been used for AutoML and logistic regression for the grid searches through hyperdrive configuration.
+***
 
+## Hyperdrive Modelling
+***
 
-The development of a new drug largely depends on trial and error. It typically involves synthesizing thousands of compounds that finally becomes a drug. This process is extremely expensive and slow. Therefore, the ability to accurately predict the biological activity of molecules, and understand the rationale behind those predictions would be of great value to the pharmaceutical industry. Gradient Boosting Machines (GBMs) are powerful ensemble learning techniques that have been successfully applied to several low-dimensional applications. Despite their high accuracy, GBMs suffer from major drawbacks such as high memory-consumption. In this paper, using real, high-dimensional (i.e. 1776 predictors) molecules dataset, we demonstrate that by using different feature selection/reduction techniques, the computations costs for building and tuning GBMs can be substantially reduced at a slight drop in prediction accuracy. In addition, by fusing the decisions made by the ensembles using two fusion techniques, namely a majority vote and an optimized feedforward neural network, we obtain a better prediction accuracy than the individual accuracy of all ensembles.
+***
+
+## AutoML Modelling
+***
+
+***
+
+## Deployment & Endpoint Results
+***
+
+***
+
+## Recommendations & Future Steps
+***
+
+***
+
+## Video Link
+***
+
+***
