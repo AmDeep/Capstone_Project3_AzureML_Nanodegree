@@ -1,5 +1,6 @@
 # Capstone_Project3_AzureML_Nanodegree
 ***
+![alt text](https://raw.githubusercontent.com/AmDeep/Project2_Udacity_Microsoft_ML/main/Images/Image3.PNG)
 
 ## Overview Of Dataset
 ***
