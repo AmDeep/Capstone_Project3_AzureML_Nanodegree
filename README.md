@@ -47,17 +47,17 @@ A score.py file is created with commands for telemtry, input sampling and output
 ### 1. VotingEnsemble-----------------------------------> 0.8131
 ### 2. StackEnsemble------------------------------------> 0.8105
 ### 3. StandardScalerWrapper XGBoostClassifier----------> 0.8081
-![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalAutoMLFiles/AUTOMLNANODEGREE.PNG)
-![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalAutoMLFiles/AUTOMLPAGE2.PNG)
-![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalAutoMLFiles/AUTOMLPAGE3.PNG)
-![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalAutoMLFiles/AUTOMLPAGE6.PNG)
+![AUTOMLPAGE1](https://raw.githubusercontent.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/main/FinalAutoMLFiles/AUTOMLNANODEGREE.PNG)
+![AUTOMLPAGE2](https://raw.githubusercontent.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/main/FinalAutoMLFiles/AUTOMLPAGE2.PNG)
+![AUTOMLPAGE3](https://raw.githubusercontent.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/main/FinalAutoMLFiles/AUTOMLPAGE3.PNG)
+![AUTOMLPAGE4](https://raw.githubusercontent.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/main/FinalAutoMLFiles/AUTOMLPAGE6.PNG)
 
 
 The details for the run and the respective metrics such as AUC, accuracy, losses can be compared from the images above. The information for the Voting Ensemble algorithms and weights can be summarized as per below:-
 **************************************************************************************************************************
 
 ### {'_aml_system_azureml.automlComponent': 'AutoML', '_aml_system_ComputeTargetStatus': '{"AllocationState":"steady","PreparingNodeCount":0,"RunningNodeCount":1,"CurrentNodeCount":5}', 'ensembled_iterations': '[6, 0, 22, 9, 10, 1, 18, 24, 25]', 'ensembled_algorithms': "['XGBoostClassifier', 'LightGBM', 'LightGBM', 'XGBoostClassifier', 'XGBoostClassifier', 'XGBoostClassifier', 'LightGBM', 'LightGBM', 'XGBoostClassifier']", 'ensemble_weights': '[0.07142857142857142, 0.07142857142857142, 0.2857142857142857, 0.14285714285714285, 0.14285714285714285, 0.07142857142857142, 0.07142857142857142, 0.07142857142857142, 0.07142857142857142]', 'best_individual_pipeline_score': '0.8080553191489361', 'best_individual_iteration': '6', '_aml_system_automl_is_child_run_end_telemetry_event_logged': 'True'}
-![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalAutoMLFiles/AUTOMLPAGE7.PNG)
+![AUTOMLPAGE5](https://raw.githubusercontent.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/main/FinalAutoMLFiles/AUTOMLPAGE7.PNG)
 ***************************************************************************************************************************
 
 ***
@@ -67,22 +67,22 @@ The details for the run and the respective metrics such as AUC, accuracy, losses
 Using Azure ACI, a webservice can be deployed as seen from the images below where we define sample values for the all inputs(from D1 to D1776). This input data is converted to a JSON format and dumped. In the endpoint.py file, we set the content type and fill in the Scoring URI obtained from the ACI webservice model deployment. Once the respective model endpoint has a healthy status, we can then send sample inputs to test out the output through two separate methods:-
 1. By running the endpoint.py file with predefined input sample points.
 2. Creating a sample JSON file and deploying the model on it, in order to compare the true and predicted outputs.
-![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalAutoMLFiles/AUTOMLPAGE4.PNG)
-![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalAutoMLFiles/AUTOMLPAGE5.PNG)
-![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalAutoMLFiles/DEPLOYMENT.PNG)
-![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalAutoMLFiles/MODELDEPLOYAUTOML.PNG)
+![DEPLOYMENT1](https://raw.githubusercontent.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/main/FinalAutoMLFiles/AUTOMLPAGE4.PNG)
+![DEPLOYMENT2](https://raw.githubusercontent.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/main/FinalAutoMLFiles/AUTOMLPAGE5.PNG)
+![DEPLOYMENT3](https://raw.githubusercontent.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/main/FinalAutoMLFiles/DEPLOYMENT.PNG)
+![DEPLOYMENT4](https://raw.githubusercontent.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/main/FinalAutoMLFiles/MODELDEPLOYAUTOML.PNG)
 As per the results obtained from the images above, we can see that the predicted and true values closely match for the sample inputs, signifying that the model deployment is successful. The model endpoint is deleted once the program objectives are achieved.
 ***
 
 ## Swagger JSON and UI
 ***
 The concept of the model deployment is expanded to a sample application through Swagger. This UI and model deployment is performed on a separate lab environment due to the lack of time on the initial lab environment, owing to long model development periods and slower connectivity. Using a similar code for the endpoint, we execute commands through docker to implement modules for JSON, shell, configuration, benchmark and log scripts. The end result is a working local host application that visualizes the individual input metrics and also allows the files to be used on sample inputs. 
-![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/Data/Swagger1.PNG)
-![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/Data/Swagger2.PNG)
-![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/Data/Swagger3.PNG)
-![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/Data/Swagger4.PNG)
-![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/Data/Swagger5.PNG)
-![alt text](https://github.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/Data/Swagger6.PNG)
+![SWUI1](https://raw.githubusercontent.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/main/Data/Swagger1.PNG)
+![SWUI2](https://raw.githubusercontent.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/main/Data/Swagger2.PNG)
+![SWUI3](https://raw.githubusercontent.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/main/Data/Swagger3.PNG)
+![SWUI4](https://raw.githubusercontent.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/main/Data/Swagger4.PNG)
+![SWUI4](https://raw.githubusercontent.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/main/Data/Swagger5.PNG)
+![SWUI5](https://raw.githubusercontent.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/main/Data/Swagger6.PNG)
 
 The images above show the results of the scripts and the model endpoints, indicated by the [true.true] output. Server response times and the resultant execution periods can be ascertained from the remaining swagger data. The model endpoint is deleted through the console once the objectives are met. Further explanation on the steps has been provided in the video.
 ***
