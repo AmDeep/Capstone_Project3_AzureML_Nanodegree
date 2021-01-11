@@ -33,7 +33,7 @@ The code for training is stored in the train.py file. After executing the run on
 ### Accuracy:-  0.7656500802568218
 ***************************************************************************************************************************
 
-![alt text](https://raw.githubusercontent.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalHyperDriveFiles/hdc1.png)
+![alt text](https://raw.githubusercontent.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/FinalHyperDriveFiles/hdc1.PNG)
 
 ![alt text](https://raw.githubusercontent.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalHyperDriveFiles/hdc2.PNG)
 ![alt text](https://raw.githubusercontent.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalHyperDriveFiles/hdc3.PNG)
