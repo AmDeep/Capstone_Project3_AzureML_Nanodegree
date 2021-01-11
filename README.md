@@ -33,10 +33,9 @@ The code for training is stored in the train.py file. After executing the run on
 ### Accuracy:-  0.7656500802568218
 ***************************************************************************************************************************
 
-![alt text](https://raw.githubusercontent.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/main/FinalHyperDriveFiles/hdc1.PNG)
-
-![alt text](https://raw.githubusercontent.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalHyperDriveFiles/hdc2.PNG)
-![alt text](https://raw.githubusercontent.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/blob/main/FinalHyperDriveFiles/hdc3.PNG)
+![HDC1](https://raw.githubusercontent.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/main/FinalHyperDriveFiles/hdc1.PNG)
+![HDC2](https://raw.githubusercontent.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/main/FinalHyperDriveFiles/hdc2.PNG)
+![HDC3](https://raw.githubusercontent.com/AmDeep/Capstone_Project3_AzureML_Nanodegree/main/FinalHyperDriveFiles/hdc3.PNG)
 
 The outputted best model is stored under hyperdrive_best_model.joblib and the successful status of the runs can be seen from the images above.
 
